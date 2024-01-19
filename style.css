@@ -1,0 +1,86 @@
+/* its a good practise */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+
+    background-color:#E0E0E2 ;
+    /* this help us to make the textes align in the center(tic tac toe) and resent button*/
+    text-align: center;
+  }
+  
+  .container {
+    /* viewPort height =window's 70% hieght will be allocate for the container ,doesn't matter how much content will be added in the container   */
+    height: 85vh;
+
+    /* box align in the center */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    /* height: 60vmin; */
+    width: 60vmin;
+    /* display flex makes all the box align in the same line and flex-wrap:wrap will be said like this if there is not enough space in a single line then go to the next line */
+    display: flex;
+   
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+  }
+  
+  .box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: .5rem;
+    margin: .1rem;
+    border: solid black;
+    /* up left down right  */
+    /* 0.3 is opacity: ; */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 10vmin;
+    color: black;
+    background-color: #7389AE;
+  }
+  
+
+  /* ++++++++++++++++++++doneWithTheBox++++++++++++++++++ */
+  #reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #msg {
+    color: black;
+    font-size: 7vmin;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }
